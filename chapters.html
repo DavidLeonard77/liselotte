@@ -1,0 +1,8 @@
+<div ng-repeat="chapter in book" class="chapter-thumb">
+	<div class="chapter-thumb-spacer" ng-click="chaptersCtrl.gotoChapter(chapter.url);">
+		<div class="chapter-thumb-image" style="background-image: url('{{chapter.directory + chapter.preview}}');
+												width: {{thumbWidth}}px;
+												height: {{thumbHeight}}px;"></div>
+		<div class="chapter-thumb-title">{{chapter.title}}</div>
+	</div>
+</div>

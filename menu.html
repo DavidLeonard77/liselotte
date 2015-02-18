@@ -1,0 +1,21 @@
+<div class="col-1-2" align="left">
+	<div class="menu-title" ng-click="pageNav('/index.php/liselotte')">{{menu.title}}</div>
+</div>
+
+<div class="col-1-2 menu-links-spacer">
+	<div ng-repeat="menuItem in menu.nav">
+		<div class="menu-link-box"
+			 ng-mouseover="showMenu(menuItem.title);"
+			 ng-click="pageNav(menuItem.url);">
+			<div class="menu-link">{{menuItem.title}}</div>
+		</div>
+	</div>
+</div>
+
+<div class="col-1-1 menu-items-spacer">
+	<div class="menu-items"
+		 ng-show="menu.nav['galleries'].visible"
+		 ng-mouseleave="hideMenu('galleries');">
+		<chapters></chapters>
+	</div>
+</div>

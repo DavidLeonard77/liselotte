@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="liselotteSite">
+<head profile="http://www.w3.org/2005/10/profile">
+
+	<meta charset="utf-8">
+
+	<!-- FAV -->
+	<link rel="icon" type="image/png" href="{site_url}graphics/site/fav.png" />
+
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="/index.php/liselotte/style.css" type="text/css" />
+
+	<!-- ANGULAR -->
+	<script type="text/javascript" src="/scripts/angular.min.js"></script>
+	<script type="text/javascript" src="/index.php/liselotte/app.js"></script>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="/scripts/jquery-1.11.1.min.js"></script>
+
+	<title></title>
+
+</head>
+
+<body ng-controller="globalCtrl">
+	<div class="canvas" align="center">
+
+		<cover></cover>
+		
+		<div class="home-chapters"><chapters></chapters></div>
+
+	</div>
+</body>
+</html>

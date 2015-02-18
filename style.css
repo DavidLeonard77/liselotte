@@ -1,0 +1,429 @@
+html, body {
+	font-family: 'Cardo', serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	background-color: #222;
+	overflow: visible;
+}
+
+img {
+	border: 0px;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.opacityAni,
+menu div.menu-items-spacer {
+	transition-property: opacity;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 0.5s;
+	-moz-transition-timing-function: ease-out;
+	-o-transition-property: opacity;
+	-o-transition-duration: 0.5s;
+	-o-transition-timing-function: ease-out;
+}
+
+.canvas {
+	width: 100%;
+}
+
+/*
+.container:before,
+.container:after {
+	content: "";
+	display: table;
+	clear: both;
+}*/
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.grid-pad {
+	padding: 40px 0 0 40px;
+}
+
+.grid-pad > [class*='col-'] {
+	padding: 0 40px 40px 0;
+}
+
+[class*='col-'] {
+	float: none;
+	width: 100%;
+}
+
+[class*='-image'] {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+/* HOME PAGE ----------- */
+
+.home-chapters {
+	padding: 40px 80px;
+}
+
+cover {
+	display: table;
+	width: 100%;
+	height: 700px;
+}
+
+cover > div.carousel-cover-image {
+	width: 100%;
+	position: absolute;
+
+	height: 700px;
+	opacity: 1;
+}
+
+cover > div.carousel-cover-title {
+	width: 100%;
+	position: absolute;
+
+	font-size: 42px;
+	color: #222;
+	text-align: center;
+	padding: 40px;
+}
+
+/* PAGE ----------- */
+
+
+page div.carousel-page,
+page div.carousel-page > div {
+	width: 100%;
+	display: table;
+	position: absolute;
+
+	height: 700px;
+}
+
+page .carousel-page > div:nth-child(2) {
+	z-index: 400;
+}
+
+page .carousel-page > div:nth-child(3) {
+	padding-top: 700px;
+}
+
+page [class*="carousel-page-image"] {
+
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-out;
+	-o-transition-property: opacity;
+	-o-transition-duration: 1s;
+	-o-transition-timing-function: ease-out;
+
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	opacity: 0;
+}
+
+page div.carousel-page-nav {
+	float: right;
+	color: #ccc;
+	background-color: #222;
+	margin-top: 630px;
+	padding: 20px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+page div.carousel-page-caption {
+	width: 100%;
+
+	font-size: 20px;
+	color: #ccc;
+	text-align: left;
+	padding: 30px 0 40px 80px;
+}
+
+page div.carousel-page-txt {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 13px;
+	color: #ccc;
+	text-align: left;
+	line-height: 20px;
+	padding: 0 80px 80px 80px;
+	text-align: justify;
+	text-justify: distribute;
+}
+
+page [class*="bigDot-bg-"] {
+	z-index: 500;
+}
+
+.dots {
+	position: absolute;
+	width: 100%;
+	margin-top: 350px;
+}
+.dots > div {
+	display: table;
+}
+
+.slideDotSpacer {
+	display: table-cell;
+	padding: 3px;
+	cursor: pointer;
+}
+
+.slideDotSpacer > div {
+	       -webkit-transition-duration: 0.5s;
+	       -webkit-transition-property: background-color;
+	-webkit-transition-timing-function: ease-out;
+	          -moz-transition-duration: 0.5s;
+	          -moz-transition-property: background-color;
+	   -moz-transition-timing-function: ease-out;
+	            -o-transition-duration: 0.5s;
+	            -o-transition-property: background-color;
+	     -o-transition-timing-function: ease-out;
+	               transition-duration: 0.5s;
+	               transition-property: background-color;
+	        transition-timing-function: ease-out;
+}
+
+[class*="bigDot-bg-"] {
+	opacity: .4;
+	width: 40px;
+	height: 40px;
+	margin-top: 720px;
+	cursor: pointer;
+	float: right;
+}
+[class*="bigDot-bg-"]:hover {
+	opacity: .6;
+}
+
+.bigDot-bg-left {
+	margin-left: 60px;
+}
+
+.bigDot-bg-right {
+	margin-right: 60px;
+}
+
+/* MENU ----------- */
+
+menu {
+	width: 100%;
+	height: 80px;
+	color: #ccc;
+	padding: 0;
+	margin: 0;
+}
+
+menu div.menu-title {
+	font-size: 32px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 80px;
+	cursor: pointer;
+	text-align: left;
+	padding: 0 80px;
+}
+
+menu div.menu-links-spacer {
+	padding: 10px 80px 0 0;
+}
+menu div.menu-links-spacer > div {
+	float: right;
+	margin: 0 0 0 10px;
+}
+
+menu div.menu-link-box {
+	display: table-cell;
+	height: 60px;
+	padding: 0 20px;
+	vertical-align: middle;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #333;
+	cursor: pointer;
+}
+menu div.menu-link-box:hover {
+	border-color: #111;
+	background-color: #111;
+}
+
+menu div.menu-link {
+	font-size: 18px;
+}
+
+menu div.menu-items-spacer {
+	position: absolute;
+	padding: 40px 80px;
+	width: 100%;
+	z-index: 700;
+	margin-top: 80px;
+}
+
+menu div.menu-items {
+	background-color: #111;
+	overflow: hidden;
+	width: 100%;
+	box-shadow: 0px 0px 6px #111;
+}
+
+
+/* CHAPTERS ----------- */
+
+chapters {
+	display: table;
+	width: 100%;
+	padding: 40px 0 0 40px;
+}
+
+chapters div.chapter-thumb {
+	width: 50%;
+	padding: 0 40px 40px 0;
+	float: left;
+}
+
+chapters div.chapter-thumb-spacer {
+	padding: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #333;
+	cursor: pointer;
+	overflow: hidden;
+}
+chapters div.chapter-thumb-spacer:hover {
+	border-color: #666;
+}
+
+chapters div.chapter-thumb-title {
+	width: 100%;
+
+	font-size: 24px;
+	color: #ccc;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 800px) {
+
+	.container {
+		width: 800px;
+	}
+
+	[class*='col-'] {
+		float: left;
+	}
+
+	.col-1-1 {
+		width: 100%;
+	}
+	.col-1-2 {
+		width: 50%;
+	}
+	.col-1-3 {
+		width: 33.33%;
+	}
+	.col-2-3 {
+		width: 66.66%;
+	}
+	.col-1-4 {
+		width: 25%;
+	}
+	.col-3-4 {
+		width: 75%;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+
+	body {
+		font-size: 24px;
+	}
+
+}
+
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+	body {
+		-webkit-text-size-adjust: none;
+		font-size: 48px;
+	}
+
+}
+
+
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+
+	body {
+		font-size: 36px;
+	}
+
+}
+
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+}

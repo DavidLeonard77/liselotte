@@ -1,0 +1,60 @@
+<div>
+
+	<div class="carousel-page">
+
+		<div>
+
+			<div class="carousel-page-image-prev"></div>
+			<div class="carousel-page-image-active"></div>
+			<div class="carousel-page-image-next"></div>
+
+		</div>
+
+		<div>
+
+			<div class="dots"><div id="slideDots"></div></div>
+			<div class="bigDot-bg-right" ng-click="pageCtrl.showNext()">
+
+				<svg ng-hide="pageCtrl.isLast"
+					 version="1.1"
+					 id="Layer_1"
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 width="40px"
+					 height="40px"
+					 viewBox="181.562 128 148.877 255.999"
+					 enable-background="new 181.562 128 148.877 255.999"
+					 xml:space="preserve">
+					<path d="M238.283,373.117l84.53-96.249c1.034-1.189,1.408-2.627,2.25-3.907c1.158-1.781,2.281-3.407,3.065-5.344c0.842-2.032,1.216-4.093,1.594-6.25c0.343-1.875,0.718-3.657,0.718-5.562c0-2.22-0.406-4.313-0.846-6.47c-0.402-1.875-0.749-3.657-1.437-5.469c-0.843-2.062-2.062-3.843-3.346-5.72c-0.812-1.219-1.153-2.594-2.152-3.686l-85.127-95.719c-11.75-13.221-32-14.406-45.251-2.627c-13.188,11.75-14.375,32-2.624,45.187L256,255.897l-65.843,74.97c-11.687,13.248-10.374,33.497,2.905,45.155C206.378,387.709,226.597,386.397,238.283,373.117z"/>
+				</svg>
+
+			</div>
+			<div class="bigDot-bg-left" ng-click="pageCtrl.showPrev()">
+
+				<svg ng-hide="pageCtrl.isFirst"
+					 version="1.1"
+					 id="Layer_1"
+					 xmlns="http://www.w3.org/2000/svg"
+					 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 width="40px"
+					 height="40px"
+					 viewBox="181.562 128 148.877 255.999"
+					 enable-background="new 181.562 128 148.877 255.999"
+					 xml:space="preserve">
+					<path d="M273.72,138.88l-84.53,96.249c-1.034,1.189-1.408,2.627-2.25,3.907c-1.158,1.781-2.281,3.407-3.065,5.344c-0.842,2.032-1.216,4.093-1.594,6.25c-0.343,1.875-0.718,3.657-0.718,5.562c0,2.22,0.406,4.313,0.846,6.47c0.402,1.875,0.749,3.657,1.437,5.469c0.843,2.062,2.062,3.843,3.346,5.72c0.812,1.219,1.153,2.594,2.152,3.686l85.127,95.719c11.75,13.221,32,14.406,45.251,2.627c13.188-11.75,14.375-32,2.624-45.187L256.002,256.1l65.843-74.97c11.688-13.248,10.374-33.497-2.905-45.155C305.624,124.289,285.405,125.6,273.72,138.88z"/>
+				</svg>
+
+			</div>
+
+		</div>
+
+		<div>
+
+			<div class="carousel-page-caption">{{pageCtrl.carousel.cap}}</div>
+			<div class="carousel-page-txt"></div>
+
+		</div>
+
+	</div>
+
+</div>
